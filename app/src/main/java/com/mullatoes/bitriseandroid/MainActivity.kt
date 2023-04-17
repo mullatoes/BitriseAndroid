@@ -29,10 +29,18 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
+@Composable
+fun WorkingWithText(){
+    Text(
+        text = "Hello"
+    )
+}
+
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello there it is $name!",
+        text = "Hello $name!",
         modifier = modifier
     )
 }
